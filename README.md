@@ -89,6 +89,6 @@ git clone https://github.com/x4r3s/todo-lister.git
 cd todo-lister
 ```
 
-### 3. Run the game
+### 3. Run the app
 
 Open `index.html` directly in your browser.
