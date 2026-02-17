@@ -14,7 +14,6 @@ const totalCounter = document.getElementById("totalCounter");
 const doneCounter = document.getElementById("doneCounter");
 const listMessage = document.getElementById("listMessage");
 const listHint = document.getElementById("listHint");
-const footerYear = document.getElementById("footerYear");
 
 function setMessage(text) {
   listMessage.textContent = text;
@@ -256,9 +255,6 @@ function bindEvents() {
 }
 
 async function init() {
-  if (footerYear) {
-    footerYear.textContent = String(new Date().getFullYear());
-  }
 
   bindEvents();
 
