@@ -9,7 +9,7 @@
     <img alt="Repository" src="https://img.shields.io/badge/GitHub-x4r3s%2Ftodo--lister-181717?style=for-the-badge&logo=github&logoColor=white">
   </a>
   <a href="https://github.com/x4r3s/fiery-ten/blob/main/LICENSE">
-  <img alt="License" src="https://img.shields.io/github/license/x4r3s/fiery-ten?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/github/license/x4r3s/todo-lister?style=for-the-badge">
   </a>
 </p>
 
