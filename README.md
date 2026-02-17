@@ -72,6 +72,7 @@ Try the app online:
 
 > JavaScript must be enabled.
 
+---
 
 ## 🚀 Getting Started
 
