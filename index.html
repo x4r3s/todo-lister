@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b0b12" />
+  <meta name="description" content="TODO LISTER helps track tasks by users and manage completion state." />
+  <title>TODO LISTER</title>
+  <link rel="icon" href="./favicon.png" type="image/png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="app" aria-labelledby="appTitle">
+    <header>
+      <h1 class="title" id="appTitle">TODO LISTER</h1>
+      <p class="stats">
+        Tasks: <b id="totalCounter">0</b> · Completed: <b id="doneCounter">0</b>
+      </p>
+      <p class="text">Track tasks from users and add your own items.</p>
+    </header>
+
+    <section class="board" aria-label="Create todo">
+      <form class="todo-form" id="todoForm" autocomplete="off">
+        <label class="field" for="new-todo">Task title</label>
+        <input id="new-todo" name="todo" type="text" placeholder="Add a new task" required />
+
+        <label class="field" for="user-todo">User</label>
+        <select id="user-todo" name="user" required>
+          <option value="" disabled selected>Select user</option>
+        </select>
+
+        <div class="actions">
+          <button class="btn" type="submit">Add Todo</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel" aria-label="List status">
+      <p class="msg" id="listMessage" role="status" aria-live="polite">
+        Loading todos and users...
+      </p>
+      <p class="hint" id="listHint">Use checkbox to complete task and × to remove it.</p>
+      <ul class="todo-list" id="todo-list" aria-live="polite"></ul>
+    </section>
+
+    <footer class="footer" aria-label="Project credits">
+      <div class="credit">
+        <span class="label">Made by</span>
+        <a class="author" href="https://xar3s.ru/">xar3s</a>
+        <span class="dot">•</span>
+        <span class="year" id="footerYear"></span>
+      </div>
+
+      <a class="repo" href="https://github.com/x4r3s/fiery-ten">
+        <img class="icon" src="./github.svg" alt="" aria-hidden="true" />
+        <span>View repository</span>
+      </a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
